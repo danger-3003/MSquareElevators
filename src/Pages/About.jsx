@@ -1,6 +1,8 @@
 import { useRef, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import SideImage from "../assets/Background.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function About() {
     const location = useLocation();
@@ -41,10 +43,15 @@ function About() {
         }
     },[location]);
 
+    useEffect(()=>{
+        AOS.init({duration:1000})
+        AOS.refresh()
+    })
+
     return(
-        <div className="h-max pt-24 pb-16 px-[3%] sm:px-5 md:px-10 font-[poppins]" ref={aboutScreen}>
+        <div className="h-max pt-24 pb-16 px-[3%] sm:px-5 md:px-10 font-[poppins] overflow-hidden" ref={aboutScreen}>
             <div className="flex items-center justify-center flex-col gap-10 md:flex-row">
-                <div className="flex items-start justify-center flex-col w-[80%] sm:w-[32rem] md:w-[40rem]">
+                <div data-aos="fade-right" className="flex items-start justify-center flex-col w-[80%] sm:w-[32rem] md:w-[40rem]">
                     <div className="text-4xl font-bold text-[#001f3f] mb-5">
                         <p>Our Journey of Excellence</p>
                     </div>
@@ -56,9 +63,9 @@ function About() {
                         </p>
                     </div>
                 </div>
-                <img src={SideImage} alt="SideImage" className="w-[20rem] lg:w-[30rem] mb-5" />
+                <img data-aos="fade-left" src={SideImage} alt="SideImage" className="w-[20rem] lg:w-[30rem] mb-5" />
             </div>
-            <div className="my-5 sm:px-5 md:px-10 text-center">
+            <div data-aos="fade-up" className="my-5 sm:px-5 md:px-10 text-center">
                 <p>
                     We’re more than a service provider; we’re a brand built on reliability, innovation, and customer satisfaction. Our mission is to offer seamless, state-of-the-art mobility
                     solutions that meet diverse construction demands while adhering to strict safety standards.

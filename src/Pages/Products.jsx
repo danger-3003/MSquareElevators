@@ -5,6 +5,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhoneVolume } from '@fortawesome/free-solid-svg-icons'
 import LiftSwiper from "../Components/LiftSwiper";
 import RoomSwiper from "../Components/RoomSwiper";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Products() {
     const productSection = useRef(null);
@@ -43,11 +45,17 @@ function Products() {
             smoothScroll(productSection.current, 1000); // 1000ms for the duration
         }
     }, [location]);
+
+    useEffect(()=>{
+        AOS.init({duration:1000})
+        AOS.refresh()
+    })
+
     return (
         <>
             {/* Slides per view */}
             <div className=" pb-16 pt-24 bg-[#ececec] font-[poppins] text-[#ffffff]" ref={productSection}>
-               <div className="flex items-center justify-center flex-col">
+               <div className="flex items-center justify-center flex-col" data-aos="fade-up">
                     <p className="font-bold uppercase text-4xl text-[#001f3f] mb-5">Our Products</p>
                     <p className="px-5 md:px-7 lg:w-[80%] text-[#121212] font-semibold mb-5 text-center">At MSquare Elevators, we offer a comprehensive range of elevator solutions tailored to meet diverse applications:</p>
                     <div className="flex items-center justify-center flex-row flex-wrap gap-3 mb-5">
