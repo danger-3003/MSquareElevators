@@ -30,8 +30,8 @@ function RoomSwiper() {
         <>
             <p className="mx-6 sm:mx-10 lg:mx-20 xl:mx-36 text-left text-[#333333] font-semibold text-xl mt-10 ">Our Interior Designs - </p>
             <div className="mx-6 sm:mx-10 lg:mx-20 xl:mx-36 relative flex items-center justify-center">
-                <div className="w-10 h-full absolute z-[5] bg-gradient-to-r from-[#ececec] to-[#ececec00] left-0"></div>
-                <div className="w-10 h-full absolute z-[5] bg-gradient-to-r to-[#ececec] from-[#ececec00] right-0"></div>
+                <div className="w-5 sm:w-10 h-full absolute z-[5] bg-gradient-to-r from-[#ececec] to-[#ececec00] left-0"></div>
+                <div className="w-5 sm:w-10 h-full absolute z-[5] bg-gradient-to-r to-[#ececec] from-[#ececec00] right-0"></div>
                 <Swiper
                     slidesPerView={items}
                     spaceBetween={10}
@@ -43,7 +43,7 @@ function RoomSwiper() {
                     className="mt-10"
                 >
                     <SwiperSlide className="flex items-center justify-center">
-                        <div className="relative overflow-hidden group mb-10 ml-5 sm:ml-0 shadow-lg shadow-[rgba(0,0,0,0.5)] h-max w-max rounded-xl">
+                        <div className="relative overflow-hidden group mb-10 shadow-lg shadow-[rgba(0,0,0,0.5)] h-max w-max rounded-xl">
                             <img className="h-60 w-28 md:h-72 md:w-48 object-cover object-center rounded-xl" src={Room1} alt="Room1" />
                             {/* <div className="bg-[#001f3f] top-full group-hover:top-0 transition-all duration-700 rounded-xl left-0 h-full w-full absolute flex items-center justify-center text-center font-light text-sm px-3"><p>Collapsible Gate</p></div> */}
                         </div>
