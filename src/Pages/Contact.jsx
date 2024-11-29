@@ -226,7 +226,6 @@ function Contact() {
                     className="w-[90vw] h-60 sm:w-[80vw] sm:h-56 md:h-72 md:w-[26rem] lg:h-80 lg:w-[35rem]"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d518.4898297959869!2d83.20009098193275!3d17.696422114270288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3968fdad2f2dd1%3A0xbf8f356b353b9231!2sSree%20Ramakrishna%20Engineering%20Company!5e1!3m2!1sen!2sin!4v1732338086642!5m2!1sen!2sin"
                     style={{ border: 0 }}
-                    allowfullscreen=""
                     loading="eager"
                 ></iframe>
             </div>
