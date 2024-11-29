@@ -60,7 +60,7 @@ function Home() {
                     <p className="font-extralight text-base md:text-xl italic mt-3 mb-5">Your trusted partner in innovative moving technology.</p>
                     <p className="text-sm md:text-lg font-light w-[80%]">As a government-certified and licensed company, we deliver advanced solutions tailored to meet your construction needs. Whether it’s residential, commercial, or industrial, our elevators are designed to enhance mobility and elevate your experience.</p>
                 </div>
-                <div className="flex items-center justify-center flex-col fixed right-0 scale-75 sm:scale-100">
+                <div className="flex items-center justify-center flex-col fixed z-[10] right-0 scale-75 sm:scale-100">
                     <div className="shadow-md shadow-slate-800 rounded-full bg-white w-5 h-5 p-5 my-1 flex items-center justify-center">
                         <a target="_blank" href="tel:6304978764"><FontAwesomeIcon icon={faPhone} className="text-blue-600"/></a>
                     </div>
