@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 function Footer() {
     return(
         <div>
-            <div className="h-max font-[poppins] flex items-center justify-center flex-col px-5 py-10" style={{background:`linear-gradient(to right,rgba(18,18,18,0.7),rgba(18,18,18,0.9)),url(${Bg})`,backgroundPosition:"center",backgroundSize:"cover"}}>
+            <div className="h-max font-[poppins] flex items-center justify-center flex-col px-5 pt-10" style={{background:`linear-gradient(to right,rgba(18,18,18,0.7),rgba(18,18,18,0.9)),url(${Bg})`,backgroundPosition:"center",backgroundSize:"cover"}}>
                 <div className="">
                     <ul className={`flex items-center justify-center flex-wrap gap-5 flex-row bg-transparent`}>
                         <li className="text-[#ffe875] font-extralight hover:text-white transition-all duration-300">
